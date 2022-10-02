@@ -213,3 +213,110 @@ n = Math.floor(n) + 1;
 console.log("This is the result of the love between" +" "+ yourName + " and" + " "+ partnerName + " is " + n + "%")
 
 alert("This is the result of the love between" +" "+ yourName + " and" + " "+ partnerName + " is " + n + "%")
+
+// ----------------------Random Number Love calculator;----------------------
+
+// ----------------------Leap Year Calculation;----------------------
+
+
+function isLeap(year) {
+  if (year % 4 === 0) {
+    if (year % 100 === 0) {
+      if (year % 400 === 0) {
+        return "Leap year.";
+      } else {
+        return "Not leap year.";
+      }
+    } else {
+      return "Leap year.";
+    }
+  } else {
+    return "Not leap year.";
+  }
+}
+
+console.log(isLeap(2024))
+
+// ----------------------Guest Invitation ----------------------
+  
+// console.log
+
+let guestInvited = ["Angels", "Sameer", "Zaid", "Memon", "Basveer", "Sami"]
+let guestName = prompt("what is yor name");
+
+if (guestInvited.includes(guestName))  {
+  'Welcome'
+} else {"your are not invited for party"}  
+
+// for alert
+
+let guestInvited = ["Angels", "Sameer", "Zaid", "Memon", "Basveer", "Sami"]
+let guestName = prompt("what is yor name");
+
+if (guestInvited.includes(guestName))  {alert(guestName + ", Welcome Boss")} 
+else {alert(guestName + ", sorry sir, your are not invited for party")}  
+
+
+
+
+output.pop; //remove number from array
+output.push; //add number in array
+ 
+
+// ----------------------Fizz Buzz ----------------------
+
+
+
+var output = [];
+var count = 1;
+
+function fizzBuzz() {
+
+if  (count % 3 === 0 && count % 5 === 0 ) {
+     output.push("FizzBuzz");
+} 
+else if (count % 3 === 0){
+    output.push("Fizz");
+} 
+else if (count % 5 === 0){
+    output.push("Buzz");
+}
+else {
+    output.push(count);
+}    
+  
+count++    
+    
+console.log(output);
+}
+
+
+// ----------------------Switch Cases -----------------------
+
+
+const expr = prompt("your fvt fruite");
+
+switch (expr) {
+  case 'Oranges':
+    console.log('Oranges are $0.59 a pound.');
+    break;
+  case 'Mangoes':
+  case 'Papayas':
+    console.log('Mangoes and papayas are $2.79 a pound.');
+    // expected output: "Mangoes and papayas are $2.79 a pound."
+    break;
+  default:
+    console.log(`Sorry, we are out of ${expr}.`);
+}
+
+// ----------------------Prompt string to number -----------------------
+
+
+let age = prompt("your age ?")
+age = Number.parseInt(age)
+
+if (age>=10 && age<=20) {
+    age + " your age is lies in 10 to 20"
+} else {
+   age + " your age does not between in 10 to 20"
+}
