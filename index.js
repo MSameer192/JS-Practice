@@ -194,7 +194,7 @@ switch(age) {
     console.log("your age is normal")
 }
 
-// ----------------------turning stament;----------------------
+// ----------------------turnery operator;----------------------
 
 let age = prompt("what is your age?")
 let a = age > 18 ? "you can drive" : "you can not drive"
@@ -320,3 +320,262 @@ if (age>=10 && age<=20) {
 } else {
    age + " your age does not between in 10 to 20"
 }
+
+
+// ----------------------Basic for loop -----------------------
+
+for (let index = 0; index < 10; index++) {
+  console.log(index+1)
+}
+
+
+
+// for loop
+
+let sum = 0;
+let num = prompt("Put any number")
+n = Number.parseInt(n)
+for (let index = 0; index < num; index++) {
+    sum += (index+1);
+}
+console.log ("sum of first " + num + " natural number is " + sum )
+
+
+let marks = {
+  sameer:43,
+  memon:42,
+  basveer:24,
+  ali:55
+}
+
+for (let index = 0; index < Object.keys(marks).length; index++) {
+  console.log ("The marks of " + Object.keys(marks)[index] + " is " + marks[Object.keys(marks)[index]])
+}
+
+
+// for loop 2
+
+let sum = 0;
+let n = prompt("Put any number");
+n = Number.parseInt(n)
+for (let index = 0; index < n; index++) {
+    sum += (index+1);
+}
+console.log ("sum of first " + n + " natural number is " + sum )
+
+
+
+// for in loop
+
+let Months = {
+  Basveer: "80",
+  Sameer: "100",
+  Sidea: "70",
+  Bushra:"10",
+}
+
+for (let Key in Months) {
+ console.log ( a + " birthday month is " + Months[Key]) 
+}
+
+
+
+let marks = {
+  sameer:43,
+  memon:42,
+  basveer:24,
+  ali:55
+}
+
+
+for (let key in marks) {
+  console.log("The marks of " + key + " is " + marks[key])
+}
+
+
+// for off loop
+
+
+for (let b of "Months") {
+  console.log (b)
+}
+
+for (let index = 0; index < array.length; index++) {
+  const element = array[index];
+  
+}
+
+// for in  loop
+
+let Student = {
+  Basveer: 80,
+  Sameer: 100,
+  Sidea: 70,
+  Bushra:10,
+}
+
+for (let key in Student) {
+ console.log ( key + " marks is " + Student[key]) 
+}
+
+// ----------------------While loop -----------------------
+
+
+let newNum = prompt("Put any number")
+newNum = Number.parseInt(newNum)
+
+
+let iNum = 0;
+while (iNum<newNum) {
+    console.log(iNum)
+    iNum = iNum + 1
+}
+
+
+
+let cn = 43
+let i
+while (i != cn) {
+  console.log("Try again")
+  i = prompt("Enter a number")
+}
+console.log("You have entered a correct number")
+
+
+// ----------------------DO While loop -----------------------
+
+
+let newNum = prompt("Put any number")
+newNum = Number.parseInt(newNum)
+
+
+let iNum = 10;
+do {
+    console.log(iNum)
+    iNum++
+} while (iNum<newNum) 
+
+// ----------------------Function -----------------------
+
+
+function calFunction(x, y) {
+  return (2 + (x + y)) * 2   
+}
+
+let a = 2
+let b = 4
+let c = 3
+
+console.log("calculation is " + calFunction(a, b))
+
+
+// ----------------------Arrow Function -----------------------
+
+
+let calculation = (x, y) => {
+  return (2 + (x + y)) * 2   
+}
+
+let a = 2
+let b = 4
+let x = 2
+let y = 3
+
+
+console.log("calculation is " + calculation(a, b))
+
+calculation(x, y);
+
+
+let mean = (a, b, c, d, e) => {
+  return (a+b+c+d+e)/5
+}
+
+console.log(mean(2,3,4,5,6))
+
+
+// ----------------------Arrow.... form  & reduc -----------------------
+
+let name = "Harry"
+let arr = Array.from(name)
+console.log(arr)
+
+
+
+let num = [1,2,3,4,5]
+
+let sum = num.reduce((a, b) =>{
+    return a + b
+})
+  
+console.log(sum)
+
+
+
+
+
+
+let num = [1,2,3,4,5]
+let pushArr = num.push(prompt("put your any number in array"))
+
+console.log(num)
+
+
+let num = [1,2,3,4,5]
+
+let pushArr
+while (pushArr != 0) {
+pushArr = prompt("put your any number in array")
+}
+
+num.push(pushArr)
+console.log(num)
+
+// while do loop
+
+let num = [1,2,3,4,5]
+let pushArr
+
+do {
+    pushArr = prompt("put your any number in array")
+    num.push(pushArr)
+
+   } while (pushArr != 0)
+
+console.log(num)
+
+
+let arr = [45, 23, 21]
+// Array map method
+let a = arr.map((value, index, array) => {
+  // console.log(value, index, array)
+  return value + index
+})
+
+let arr2 = [10,20,3,40,50,999, 1000]
+let a2 = arr2.filter((a) => {
+  return a % 10 ===0
+})
+console.log(a2)
+
+let arr = [2,4,6,8,10]
+
+
+
+let a = arr.map((value) => {
+  // console.log(value, index, array)
+  return Math.pow(value,2) 
+})
+
+console.log(a)
+
+
+
+let arr = [2,4,6,8,10]
+
+let a = arr.reduce((value1, value2) => {
+  // console.log(value, index, array)
+  return value1 * value2   
+})
+
+console.log(a)
