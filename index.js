@@ -579,3 +579,5 @@ let a = arr.reduce((value1, value2) => {
 })
 
 console.log(a)
+
+
