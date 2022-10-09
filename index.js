@@ -581,3 +581,33 @@ let a = arr.reduce((value1, value2) => {
 console.log(a)
 
 
+
+
+let runAgain = true
+
+while (runAgain) {
+let age = prompt("what is your age?")
+age = Number.parseInt(age)  
+if(age){
+let a = alert(age >= 18 ? "you can drive" : "you can not drive")
+} if (age > 0 && age < 18 ) {
+  console.error("you have entered small age, sorry")
+} runAgain = confirm("You want to check again")
+} 
+
+
+
+// location url
+
+let number = prompt("write a number")
+number = Number.parseInt(number)  
+
+if(number > 4){
+  location.href ="https://www.facebook.com/"
+} 
+
+// backgroud with JS
+
+
+let color = prompt("Enter the page background color")
+document.body.style.background = color
